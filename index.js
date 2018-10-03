@@ -2,8 +2,10 @@ const express = require('express')
 const requestProxy = require('express-request-proxy')
 const through2 = require('through2')
 const replace = require('buffer-replace')
+const cors = require('cors')
 
 const app = express()
+app.use(cors())
 
 app.all(
   '/content_proxy/*',
