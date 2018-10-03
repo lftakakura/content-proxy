@@ -1,0 +1,18 @@
+{
+  "name": "content-proxy",
+  "version": "1.0.0",
+  "description": "A simple server to proxy requests",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luiz Felipe Takakura <luiz.takakura@tfgco.com> (https://git.topfreegames.com/u/luiz.takakura)",
+  "license": "ISC",
+  "dependencies": {
+    "buffer-replace": "^1.0.0",
+    "express": "^4.13.4",
+    "express-request-proxy": "^2.0.0",
+    "through2": "^2.0.3"
+  }
+}
