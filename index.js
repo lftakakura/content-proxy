@@ -5,10 +5,11 @@ const replace = require('buffer-replace')
 const cors = require('cors')
 
 const app = express()
-app.use(cors())
 
+app.options('/content_proxy/*', cors()) // enable pre-flight request for content_proxy request
 app.all(
   '/content_proxy/*',
+  cors(),
   (req, res, next) => {
     const regex = /(https?:)\/\/?/
     Object.keys(req.params).forEach((key) => {
