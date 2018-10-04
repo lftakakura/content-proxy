@@ -7,8 +7,7 @@ const cors = require('cors')
 const app = express()
 
 app.use(cors())
-
-app.options('/content_proxy/*', cors()) // enable pre-flight request for content_proxy request
+app.options('*', cors()) // enable pre-flight requests
 app.all(
   '/content_proxy/*',
   cors(),
