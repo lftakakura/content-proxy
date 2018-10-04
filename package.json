@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "buffer-replace": "^1.0.0",
+    "cors": "^2.8.4",
     "express": "^4.13.4",
     "express-request-proxy": "^2.0.0",
     "through2": "^2.0.3"
