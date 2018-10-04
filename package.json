@@ -2,12 +2,16 @@
   "name": "content-proxy",
   "version": "1.0.0",
   "description": "A simple server to proxy requests",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/lftakakura/content-proxy.git"
+  },
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Luiz Felipe Takakura <luiz.takakura@tfgco.com> (https://git.topfreegames.com/u/luiz.takakura)",
+  "author": "Luiz Felipe Takakura <lftakakura@gmail.com> (https://github.com/lftakakura)",
   "license": "ISC",
   "dependencies": {
     "buffer-replace": "^1.0.0",
